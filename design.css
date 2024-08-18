@@ -1,0 +1,201 @@
+@font-face {
+    font-family: Oswald;
+    src: url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url('https://fonts.googleapis.com/css2?family=Oswald&family=Raleway:wght@300&display=swap');
+}
+
+html {
+    background-color: #1c282e;
+}
+
+#bodywrapper {
+    font-family: Raleway, sans-serif, Arial;
+    color: #ccd3d9;
+    border-style: solid;
+    border-width: 0 10px 0 10px;
+    border-color: #273f4b;
+    background-color: #2b4c5d;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-family: Oswald, sans-serif, Arial;
+}
+
+h6 {
+    color: #a1afba;
+}
+
+.usernametitle > h1, h4, h6 {
+    margin: 5px 5px 5px 10px;
+ }
+
+/*header and footer design*/
+header, footer {
+    font-family: 'Poppins', sans-serif;
+}
+
+/*intro design*/
+#intro-container {
+    margin: 0 10px 0 10px;
+    border-radius: 25px;
+    background-color: black;
+    overflow: hidden;
+}
+
+#title-info {
+    background-color: black;
+}
+
+/*buy-game design*/
+#buy-game {
+    color: white;
+    border: 5px solid #273f4b;
+    background-color: #6a8595;
+    border-radius: 10px;
+}
+
+#buy-game-button {
+    background-color: #68a047;
+    border-radius: 5px;
+    color: #add197;
+    border: none;
+    font-size: 1em;
+    text-shadow: 1px 1px #85bb65;
+    cursor: pointer;
+}
+
+#buy-game-button:hover {
+    background-color: #add197;
+    color: #85bb65;
+    text-shadow: 1px 1px white;
+}
+
+#pricearea {
+    background-color: black;
+    padding: 2px 3px 2px 3px;
+    border-radius: 5px;
+}
+
+/*awards design*/
+#awards {
+    background-color: black;
+    border: 5px solid #FFD700;
+    color: #FFD700;
+    border-radius: 10px;
+}
+
+.awardsimg {
+    min-width: 20%;
+    height: 100px;
+    border: 5px solid #dab24a;
+    border-radius: 100%;
+}
+
+.awards2img {
+    height: auto;
+    max-width: 80%;
+}
+
+/*game details design*/
+#details {
+    background-color: #6a8595;
+    border: 5px solid #273f4b;
+    border-radius: 10px;
+}
+
+#details th {
+    text-align: left;
+    vertical-align: top;
+    padding-bottom: 5px;
+}
+
+#details td {
+    vertical-align: top;
+    padding-bottom: 5px;
+}
+
+/*about game design*/
+#about-game {
+    background-color: #6a8595;
+    border: 5px solid #273f4b;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#about-game h1 {
+    color: white;
+}
+
+.gameplay-slideshow {
+    overflow: hidden;
+    background-color: #6a8595;
+    border: 5px solid #273f4b;
+    border-radius: 10px;
+    background-color: #273f4b;
+}
+
+.videoslide {
+    display: none;
+}
+
+footer {
+    background-color: black;
+}
+
+#slideshow-container button {
+    border: none;
+    background-color: transparent;
+}
+
+#slideshow-container {
+    border: none;
+}
+
+/*game reviews design*/
+#game-reviews {
+    margin: 50px 10px 10px 10px;
+}
+
+.currPage {
+    background-color: rgba(105, 105, 105, 0.5);
+}
+
+.post {
+    border: 5px solid #273f4b;
+    background-color: #6a8595;
+}
+
+.pfp:hover {
+    transition: transform 1s;
+    transform: scale(1.5);
+}
+
+.pfp {
+    background-color: white;
+    cursor: pointer;
+}
+
+.tradeitem {
+    background-color: #a1afba;
+    border: 5px solid #2b4c5d;
+}
+
+.hashtags > li {
+    cursor: pointer;
+    color: #0096FF;
+}
+
+.hashtags > li:hover {
+    text-decoration: underline;
+    color: #0047AB;
+}
+
+.contentinfo li:hover {
+    border-radius: 5px;
+    background-color: #2b4c5d;
+}

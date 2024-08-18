@@ -1,0 +1,107 @@
+@font-face {
+    font-family: Oswald;
+    src: url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url('https://fonts.googleapis.com/css2?family=Oswald&family=Raleway:wght@300&display=swap');
+}
+
+html {
+    background-color: #1c282e;
+}
+
+#bodywrapper {
+    color: #ccd3d9;
+    border-left: 10px solid #273f4b;
+    border-right: 10px solid #273f4b;
+    background-color: #2b4c5d;
+    font-family: Raleway, sans-serif, Arial;
+}
+
+h1, h4, h6 {
+    font-family: Oswald, sans-serif, Arial;
+}
+
+h6 {
+    color: #a1afba;
+}
+
+/*header and footer design*/
+header, footer {
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Post Content*/
+#createpost {
+    border: 5px solid #273f4b;
+    background-color: #6a8595;
+}
+
+#postcontent > textarea {
+    color: #ccd3d9;
+    background-color: #273f4b;
+}
+
+#postcontent > textarea::placeholder {
+    font-family: Raleway, sans-serif, Arial;
+    color: #ccd3d9;
+}
+
+#posttools img:hover {
+    background-color: #a1afba;
+}
+
+#posttools > input {
+    cursor: pointer;
+    background-color: white;
+    color: #2b4c5d;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+#posttools > input:active {
+    background-color: #ccd3d9;
+    color: #2b4c5d;
+}
+
+/*post design*/
+.currPage {
+    background-color: rgba(105, 105, 105, 0.5);
+}
+
+.post {
+    border: 5px solid #273f4b;
+    background-color: #6a8595;
+}
+
+.pfp:hover {
+    transition: transform 1s;
+    transform: scale(1.5);
+}
+
+.pfp {
+    background-color: white;
+    cursor: pointer;
+}
+
+.tradeitem {
+    background-color: #a1afba;
+    border: 5px solid #2b4c5d;
+}
+
+.hashtags > li {
+    cursor: pointer;
+    color: #0096FF;
+}
+
+.hashtags > li:hover {
+    text-decoration: underline;
+    color: #0047AB;
+}
+
+.contentinfo li:hover {
+    border-radius: 5px;
+    background-color: #2b4c5d;
+}

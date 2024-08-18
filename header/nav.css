@@ -1,0 +1,65 @@
+/*Navigation part*/
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px 100px;
+    box-sizing: border-box;
+    background: rgba(0,0,0,0.4);
+    transition: 0.5s;
+    z-index: 3;
+}
+
+nav.black {
+    background: rgba(0,0,0,0.8);
+    height: 80px;
+    padding: 10px 50px;
+}
+
+nav .logo {
+    float: left;
+}
+
+nav .logo img {
+    height: 80px;
+    border-radius: 5%;
+    transition: 0.5s;
+}
+
+nav.black .logo img {
+    border-radius: 50%;
+    height: 60px;
+}
+
+nav ul {
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;   
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    line-height: 80px;
+    color: #45f3ff;
+    padding: 5px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+nav.black ul li a {
+    line-height: 60px;
+    color: #fff;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    color: #fff;
+    background: #0dafbb;
+}

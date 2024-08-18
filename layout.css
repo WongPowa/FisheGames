@@ -1,0 +1,382 @@
+#bodywrapper {
+    display: block;
+    margin: auto;
+    max-width: 940px;
+    min-width: 640px;
+    width: 100%;
+    padding: 5em 0 5em 0;
+}
+
+@media (max-width: 960px) {
+    body {
+      padding-top: 0px;
+    }
+}
+
+section {
+    display:block;
+}
+
+.videoslide {
+    width: 100%;
+    height: auto;
+}
+/*Intro-Container Layout*/
+#title {
+    border-width: 0 0 5px 0;
+    border-radius: 0;
+    display: flex;
+}
+
+#title > img {
+    width: 40%;
+    height: auto;
+}
+
+#title-info {
+    border: none;
+    display: flex;
+    height: 70px;
+    position: relative;
+}
+
+#title-info > img {
+    width: 33%;
+    min-width: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#circleselect {
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: 50%;
+    position: absolute;
+    display: flex;
+}
+
+.circle {
+    display: block;
+    margin: 0 5px 0 5px;
+    height: 20px;
+    width: 20px;
+    background-color: #d3d3d3;
+    border-radius: 50%;
+  }
+
+/*Buy Game Layout*/
+#buy-game {
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#pricearea {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+#buy-game-button {
+    margin-left: 5px;
+    padding: 10px;
+}
+
+/*Slideshow Layout*/
+#slideshow-container {
+    position: relative;
+}
+
+#slideshow-container > button {
+    width: 15%;
+    height: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    cursor: pointer;
+}
+
+#slideshow-container > button > img {
+    width: 40%;
+    height: auto;
+}
+
+#prevbutton {
+    left: 0;
+}
+
+#nextbutton {
+    right: 0;
+}
+
+#circleselect > button {
+    cursor: pointer;
+}
+
+/*Awards Layout*/
+#awards {
+    display: inline;
+    box-sizing: border-box;
+    width: calc(65% - 20px);
+    margin: 10px;
+    padding: 20px;
+    float: left;
+}
+
+#awards img {
+    width: auto;
+    max-height: 124px;
+}
+
+.awards {
+    display: flex;
+    margin: 20px 0 20px 0;
+}
+
+.awards:nth-of-type(even) {
+    flex-direction: row-reverse;
+}
+
+/*Details Layout*/
+#details {
+    padding: 10px;
+    display: inline-block;
+    margin: 10px;
+    box-sizing: border-box;
+    width: calc(35% - 20px);
+}
+
+#details > ul > li{
+    word-wrap: break-word;
+    list-style: none;
+}
+
+#details > ul {
+    padding: 0;
+}
+
+/*About-Game Layout*/
+#about-game {
+    padding-bottom: 10px;
+    clear: both;
+    border-style: none;
+}
+
+#about-game > h1 {
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+.gameplay-slideshow {
+    margin: 10px;
+    display: flex;
+}
+
+.gameplay-slideshow > video{
+    width: 40%;
+    height: auto;
+}
+
+.gameplay-slideshow > img{
+    width: 40%;
+    height: auto;
+}
+
+.gameplay-slideshow:nth-of-type(2) {
+    flex-direction: row-reverse;
+}
+
+.text {
+    border-style: none;
+    padding: 10px;
+    text-align: justify;
+}
+
+/*Post Layout*/
+.post {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 1em;
+}
+
+.online {
+    height: 9px;
+    width: 9px;
+    background-color: #00FF00;
+    border-radius: 50%;
+    border: 1px solid black;
+    display: inline-block;
+}
+
+.offline {
+    height: 9px;
+    width: 9px;
+    background-color: grey;
+    border-radius: 50%;
+    border: 1px solid black;
+    display: inline-block;
+}
+
+.away {
+    height: 9px;
+    width: 9px;
+    background-color: #FFDA00;
+    border-radius: 50%;
+    border: 1px solid black;
+    display: inline-block;
+}
+
+.userinfo {
+    height: fit-content;
+    width: fit-content;
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+}
+
+.pfp {
+    overflow: hidden;
+    min-width: 5em;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+
+.pfp > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 5em;
+    width: auto;
+}
+
+.usernametitle {
+    height: fit-content;
+}
+
+.votes img {
+    cursor: pointer;
+    height: 2em;
+    width: auto;
+}
+
+.votes {
+    margin-left: auto;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    margin-right: 20px;
+}
+
+.votes > ul {
+    list-style-type: none;
+}
+
+.content {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-height: 10em;
+    margin: 0 1em 0 1em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.content > img, video {
+    height: 512px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.content > .slideshow {
+    display: none;
+}
+
+.content > button {
+    border: none;
+    background-color: transparent;
+    height: auto;
+    width: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    cursor: pointer;
+}
+
+.content > button > img {
+    max-width:100%;
+    max-height:100%;
+}
+
+.prevbutton {
+    display: none;
+    left: 0;
+}
+
+.nextbutton {
+    display: none;
+    right: 0;
+}
+
+.contentinfo {
+    width: 100%;
+}
+
+.contentinfo > ul{
+    padding-left: 10px;
+    display: flex;
+    list-style-type: none;
+}
+
+.contentinfo > ul > li {
+    cursor: pointer;
+    text-align: center;
+    padding: 0 5px 0 5px;
+}
+
+.seeMore {
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.hashtags {
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+}
+
+.hashtags li{
+    padding-right: 5px;
+}
+
+.currPage {
+    padding: 5px;
+    border: 1px black solid;
+    border-radius: 25px;
+    position: absolute;
+    top: 2%;
+    right: 5%;
+}
+
+.seeMoreBtn {
+    display: none;
+    background-color: transparent;
+    border-color: transparent;
+    text-decoration: underline;
+    color: #a1afba;
+    cursor: pointer;
+    right: 7%;
+    bottom: 0%;
+    margin-left: auto;
+}
+
+/*footer-layout*/
+footer {
+    margin: -10px;
+}

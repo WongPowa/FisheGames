@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Subnautica on Fishe Games</title>
+        <link href= "layout.css" rel="stylesheet">
+        <link href="design.css" rel="stylesheet">
+        <link rel="stylesheet" href="../header/nav.css">
+        <link rel="stylesheet" href="../footer/footer.css"> 
+        <link rel="icon" type="image/x-icon" href="photo/fish-logo-quan.png">
+    </head>
+    <body>
+        <header>
+            <!--Navigation Bar-->
+            <nav>
+                <div class="logo">
+                    <a href="../Terrence Project/login.html"><img src="photo/logo.jpg"></a>                   
+                </div>
+                <ul>
+                    <li><a href='../Terrence Project/slider.html'>Home</a></li>
+                    <li><a href='../Sofea Project/aboutUs.html'>About</a></li>
+                    <li><a href='../Liang Quan Project/Search.html'>Game</a></li>
+                    <li><a href='../Sofea Project/product.html'>Console</a></li>
+                    <li><a href='../Terrence Project/developer.html'>Developer</a></li>
+                    <li><a href='../Shan Wen Project/contact_us.html'>Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="bodywrapper">
+            <section id ="intro-container">
+                <section id="title">
+                    <img src="photo/subnauticatitletransparent.png" alt="Subnautica Title">
+                    <section id="title-info">
+                            <img src="photo/ps5.svg" alt="PS5 Logo">
+                            <img src="photo/xboxlogo.svg" alt="XBOX Logo">
+                            <img src="photo/steam.svg" alt="Steam Logo" >
+                    </section>
+                </section>
+                <div id="slideshow-container">
+                    <video class="videoslide" src="video/subnauticatrailer.mp4" autoplay muted loop controls>Your browser does not support this video.</video>
+                    <video class="videoslide" src="video/Subnautica Gameplay Trailer.mp4" autoplay muted loop controls>Your browser does not support this video.</video>
+                    <video class="videoslide" src="video/Subnautica Teaser Trailer.mp4" autoplay muted loop controls>Your browser does not support this video.</video>
+                    <button type="button" id="prevbutton" onclick="plusSlides(-1)"><img class="prev" src="photo/leftarrow.svg" alt="chevron-left-icon"></button>
+                    <button type="button" id="nextbutton" onclick="plusSlides(1)" ><img class="next" src="photo/rightarrow.svg" alt="chevron-right-icon"></button>
+                </div>
+                <section id="title-info">
+                    <div id="circleselect">
+                        <button type="button" onclick="selectSlides(1)" class="circle"></button>
+                        <button type="button" onclick="selectSlides(2)" class="circle"></button>
+                        <button type="button" onclick="selectSlides(3)" class="circle"></button>
+                    </div>
+                </section>
+            </section>
+            <section id ="buy-game">
+                <div>
+                    <h1>SUBNAUTICA</h1>
+                    <h6>16th Dec 2014</h6>
+                </div>
+                <div id="pricearea">
+                    <div id="pricearea">
+                        RM51.00
+                        <!-- The Code Shan Wen Add -->
+                        <form action="../Shan Wen Project/add_to_cart.html">
+                            <input type="number" id="gameId" name="gameId" value="4" style="display:none;"> 
+                            <!-- Checkout is not display, it is use to send value using from -->
+                            <input type="submit" value="Add To Cart" id="buy-game-button">
+                        </form>
+                        <!-- The Code Shan Wen Add -->
+                    </div>
+                </div>
+            </section>
+            <section id ="awards">
+                <h1>AWARDS</h1>
+                <div class="awards">
+                    <img src="photo/goldenjoystick.png" alt="2018joystickaward" class="awardsimg">
+                    <img src="photo/bannerjoystick.png" alt="2018joystickaward" class="awards2img">
+                </div>
+                <div class="awards">
+                    <img src="photo/pcgamer.jpg" alt="2018pcgamer" class="awardsimg">
+                    <img src="photo/bannerpcgamer.png" alt="2018pcgamer" class="awards2img">
+                </div>
+                <div class="awards">
+                    <img src="photo/ign.jpg" alt="ign9.1" class="awardsimg">
+                    <img src="photo/bannerIMG.png" alt="2018pcgamer" class="awards2img">
+                </div>
+            </section>
+            <section id ="details">
+                <table>
+                    <tr>
+                        <th>Genre</th>
+                        <td>:</td>
+                        <td>Adventure, Indie, Horror, Survival</td>
+                    </tr>
+                    <tr>
+                        <th>Recommended Age</th>
+                        <td>:</td>
+                        <td>12+</td>
+                    </tr>
+                    <tr>
+                        <th>Rating</th>
+                        <td>:</td>
+                        <td>9.5/10</td>
+                    </tr>
+                    <tr>
+                        <th>Developer</th>
+                        <td>:</td>
+                        <td>Unknown World Entertainment</td>
+                    </tr>
+                    <tr>
+                        <th>Publisher</th>
+                        <td>:</td>
+                        <td>Unknown Worlds Entertainment</td>
+                    </tr>
+                </table>
+            </section>
+            <section id="about-game">
+                <h1>ABOUT THE GAME</h1>
+                <section class="gameplay-slideshow">
+                    <video src="video/subnauticabiome.mp4" autoplay muted loop>
+                        Your browser does not support this video
+                    </video>
+                    <section class="text">
+                        <h1>EXPLORE THE WORLD</h1>
+                        <p>You have crash-landed on an alien ocean world, surrounded by ocean water with no land to be found in sight. You have to descend deeper into the waters with what's left of your home's technology.
+                        Planet 4546B's oceans range from sun drenched shallow coral reefs to treacherous deep-sea trenches, lava fields, and bio-luminescent underwater rivers all field with various flora and fauna never seen before. 
+                        </p>
+                    </section>
+                </section>
+                <section class="gameplay-slideshow">
+                    <img src="video/subnauticagif.gif" alt="Subnautica Alien Architecture">
+                    <section class ="text">
+                        <h1>UNCOVER SECRETS</h1>
+                        <p>Many mysterious structures and creatures are waiting to be discovered, perhaps you can find out the truth with your newfound knowledge?</p>
+                    </section>
+                </section>
+                <section class="gameplay-slideshow">
+                    <video src="video/subnauticareaper.mp4" autoplay muted loop>
+                        Your browser does not support this video
+                    </video>
+                    <section class="text">
+                        <h1>SURVIVE</h1>
+                    <p>Use whatever you can to survive! The environment of Planet 4546B may be unforgiving, but with good preperation, you have a higher chance of survival. 
+                        Collect materials from your environment and craft many tools and vehicles to help you survive.</p>
+                    </section>
+                </section>
+            </section>  
+            <section id="game-reviews">
+                <h1>REVIEWS</h1>
+                <section class="post">
+                    <div class="userinfo">
+                        <div class="pfp"><img src="photo/gigachadpfp.jpg" alt="profilepic"></div>
+                        <div class="usernametitle">
+                            <h1>Honest Thoughts</h1>
+                            <h4>- gigachad <span class="away"></span></h4>
+                            <h6>1 month ago</h6>
+                        </div>
+                    </div>
+                    <div class="votes">
+                        <ul>
+                            <li><img src="photo/arrow-up-drop-circle-outline.svg" alt="upvote" onclick="upvote(1,0)"></li>
+                            <li class="count">0</li>
+                            <li><img src="photo/arrow-down-drop-circle-outline.svg" alt="downvote" onclick="upvote(-1,0)"></li>
+                        </ul>
+                    </div>
+                    <div class="content">
+                        <p>
+                            This game is probably the best survival game I’ve ever played. 
+                            What first started as a game of just swimming around collecting 
+                            resources to better my chances of survival turned into a mysterious 
+                            quest of discovering what caused the Aurora to crash land on this 
+                            massive ocean-planet and how to ultimately return home.
+                        </p>
+                        <p>
+                            While it does feel very satisfying to explore new areas away from where
+                            your life pod landed, it can also be frightening sometimes. Going to
+                            the end of a biome to see a cliff descend into a new biome that you 
+                            haven’t explored yet and only seeing a dark abyss when you look down 
+                            can be scary... Not knowing what dangers you might face makes one hesitant
+                            to journey further. I find that sense of terror to be what keeps this 
+                            game exhilarating to me.It really makes you want to properly prepare
+                                and think about everything you’re going to need when venturing far 
+                                from your lifepod.
+                        </p>
+                        <p>
+                            I also love the base building system. You can build bases wherever you want
+                            and in fact, it is a necessity. You wouldn’t want to be down 800m and 
+                            suddenly have your vehicle run out of power and not produce oxygen anymore... 
+                            you would most definitely drown before you make it back to the surface. So you’d
+                            have to make a base around 500m-800m down so that you have a safe place to 
+                            recharge batteries, recharge power cells for your vehicles and grow food all 
+                            in an effort to dive deeper to discover the mystery that shrouds this strange planet.
+                        </p>
+                        <p>
+                            The game does have its bugs though, but I found them to be inconsequential when 
+                            compared to the amount of fun I was having playing the game. The biggest 
+                            frustration is biomes and objects in biomes not loading before I get there. 
+                            Sometimes I’d zoom right passed something (like wreckage from the Aurora, which 
+                            can have useful blueprints) and not even see it because I pass it before it even 
+                            loads. Makes it difficult to find fragments to the endgame vehicle because you 
+                            have to really slow down and take your time to look at everything to make sure 
+                            that you’re not missing something that didn’t load when you first looked at it.
+                        </p>
+                        <p>All in all, this game gets a solid 10/10 from me. I’ve beaten this game many times 
+                            and just yesterday started a new game to conquer the zones that I originally avoided.</p>
+                        <ul class="hashtags">
+                            <li>#Subnautica</li>
+                            <li>#FisheGameReviews</li>
+                        </ul>
+                    </div>
+                    <div class="contentinfo">
+                        <ul>
+                            <li>Comments</li>
+                            <li>Share</li>
+                            <li>...</li>
+                            <li class="seeMore"><button type="button" class="seeMoreBtn" onclick="seeMore(0)">See More...</button></li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="post">
+                    <div class="userinfo">
+                        <div class="pfp"><img src="photo/sakana.gif" alt="profilepic"></div>
+                        <div class="usernametitle">
+                            <h1>Honestly breathtaking....</h1>
+                            <h4>- sakanaaa <span class="offline"></span></h4>
+                            <h6>2 months ago</h6>
+                        </div>
+                    </div>
+                    <div class="votes">
+                        <ul>
+                            <li><img src="photo/arrow-up-drop-circle-outline.svg" alt="upvote" onclick="upvote(1,1)"></li>
+                            <li class="count">0</li>
+                            <li><img src="photo/arrow-down-drop-circle-outline.svg" alt="downvote" onclick="upvote(-1,1)"></li>
+                        </ul>
+                    </div>
+                    <div class="content">
+                        <p>
+                            I’ve been a fan of survival games for few years now. Subnautica is by far one of the best games I have ever played! 
+                            I hope I never reach the end of it, it’s that good.
+                        </p>
+                        <p>
+                            You crash on this planet in another galaxy. The first thoughts are - Wow this is beautiful.
+                        </p>
+                        <p>
+                            The sky and islands are cool, but wait until you dive deeper into the abyss. I was mesmerised by the beauty and variety of flora and fauna. 
+                            I could spend hours and hours just swimming and discovering new plants, creatures, minerals, blueprints and other things.
+                        </p>
+                        <p>
+                            It’s so calming and immersive….that it’s easy to forget that you could die at any point. Don’t be fooled by the calm music and beauty. 
+                            The real challenge is surviving. How? Just play and you will see.
+                        </p>
+                        <p>Also don’t look up any guides. You deserve to experience this all by yourself.</p>
+                        <p>If I could erase my memory and play Subnautica again, I absolutely would.</p>
+                        <p>10/10 game, fully recommend.</p>
+                        <ul class="hashtags">
+                            <li>#Subnautica</li>
+                            <li>#FisheGameReviews</li>
+                        </ul>
+                    </div>
+                    <div class="contentinfo">
+                        <ul>
+                            <li>Comments</li>
+                            <li>Share</li>
+                            <li>...</li>
+                            <li class="seeMore"><button type="button" class="seeMoreBtn" onclick="seeMore(1)">See More...</button></li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="post">
+                    <div class="userinfo">
+                        <div class="pfp"><img src="photo/babypfp.jpg" alt="profilepic"></div>
+                        <div class="usernametitle">
+                            <h1>veli good!</h1>
+                            <h4>- aged6baby <span class="online"></span></h4>
+                            <h6>3 months ago</h6>
+                        </div>
+                    </div>
+                    <div class="votes">
+                        <ul>
+                            <li><img src="photo/arrow-up-drop-circle-outline.svg" alt="upvote" onclick="upvote(1,2)"></li>
+                            <li class="count">0</li>
+                            <li><img src="photo/arrow-down-drop-circle-outline.svg" alt="downvote" onclick="upvote(-1,2)"></li>
+                        </ul>
+                    </div>
+                    <div class="content">
+                        <p>This game is awesome!!</p>
+                    </div>
+                    <div class="contentinfo">
+                        <ul>
+                            <li>Comments</li>
+                            <li>Share</li>
+                            <li>...</li>
+                            <li class="seeMore"><button type="button" class="seeMoreBtn" onclick="seeMore(2)">See More...</button></li>
+                        </ul>
+                    </div>
+                </section>
+            </section>
+        </section>
+        <footer>
+            <div class="footer-content">
+
+                <div class="footer-brand">
+                    <img src="photo/logo.jpg" alt="" class="footer-logo">
+                    <p class="slogan">Experience the ultimate gaming adventure</p>
+                    <div class="social-link">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <h4 class="link-heading">Fishe</h4>
+                        <li class="link-item"><a href="../Sofea Project/aboutUs.html">About Us</a></li>
+                        <li class="link-item"><a href="contact_us.html">Contact Us</a></li>
+                        <li class="link-item"><a href="../Terrence Project/developer.html">Game Developer</a></li>
+                        <li class="link-item"><a href="../Liang Quan Project/Community.html">Community</a></li>
+                        <li class="link-item"><a href="#">FAQ</a></li>
+                    </ul>
+                    <ul>
+                        <h4 class="link-heading">Browse</h4>
+                        <li class="link-item"><a href="../Sofea Project/aboutUs.html">About Us</a></li>
+                        <li class="link-item"><a href="../Shan Wen Project/contact_us.html">Contact Us</a></li>
+                        <li class="link-item"><a href="../Terrence Project/developer.html">Game Developer</a></li>
+                        <li class="link-item"><a href="../Liang Quan Project/Community.html">Community</a></li>
+                        <li class="link-item"><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="copyright">
+                    <p>&copy; copyright 2023 Fishe</p>
+                </div>
+
+                <div class="footer-wrapper">
+                    <a href="#">Privacy policy</a>
+                    <a href="#">Terms and conditions</a>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script text="text/javascript" src="subnautica.js"></script>
+    <script text="text/javascript" src="Shan Wen Project/add_to_cart.js"></script>
+    <script text="text/javascript" src="../header/nav.js"></script>
+</html>

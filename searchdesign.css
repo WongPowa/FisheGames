@@ -1,0 +1,165 @@
+@font-face {
+    font-family: Oswald;
+    src: url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url('https://fonts.googleapis.com/css2?family=Oswald&family=Raleway:wght@300&display=swap');
+}
+
+html {
+    background-color: #1C282e;
+}
+
+#bodywrapper {
+    color: #ccd3d9;
+    border-style: solid;
+    border-width: 0 10px 0 10px;
+    border-color: #273f4b;
+    background-color: #2b4c5d;
+    width: fit-content;
+    font-family: Raleway, sans-serif, Arial;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: Oswald, sans-serif, Arial;
+}
+
+/*header and footer design*/
+header, footer {
+    font-family: 'Poppins', sans-serif;
+}
+
+/*navbar design*/
+#navbar {
+    font-family: Oswald;
+    border: none;
+    background-color: #a1afba;
+}
+
+#searchbarleft > li > a {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+#searchbarleft > li > a:hover {
+    transition: 0.5s;
+    color: #fff77d;
+}
+
+/*gameProfile design*/
+#selectGameProfile {
+    border: none;
+}
+
+#searchlist {
+    color: #ccd3d9;
+}
+
+#searchlist > li {
+    font-family: Raleway;
+    font-size: 1em;
+    background-color: #273f4b;
+}
+
+.gameProfile {
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 5px solid #273f4b;
+    background-color: #6a8595;
+}
+
+.gameProfile > img:hover {
+    animation-name: zoom-in;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    background-color: white;
+    opacity: 0.7;
+}
+
+@keyframes zoom-in {
+    from     {transform: scale(1);}
+    to    {transform: scale(1.05);}
+}
+
+.dropdownlist {
+    display: none;
+    background-color: #6a8595;
+}
+
+.addToCartBtn {
+    font-size: 1.2em;
+    cursor: pointer;
+    border: 1px;
+    background-color: transparent;
+    text-shadow: 1px 1px white;
+}
+
+.addToCartBtn:hover {
+    text-shadow: 1px 1px black;
+    color: white;
+}
+
+.priceTag {
+    padding: 5px;
+    background-color: #68a047;
+    color: #add197;
+}
+
+.date {
+    color: #a1afba;
+}
+
+h1:hover {
+    transition: 0.5s;
+    color: #fff77d;
+}
+
+#myInput {
+    color: #ccd3d9;
+    font-family: Raleway;
+    font-size: 1em;
+    background-color: #273f4b;
+    border: 2px solid #ccd3d9;
+    border-radius: 5px;
+}
+
+#myInput:focus {
+    border: 2px solid white;
+}
+/*navpage design*/ 
+#navpage {
+    border: none;
+}
+
+#navpage > ul > li > button {
+    height: 1.6em;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: white;
+}
+
+#navpage > ul > li > input {
+    height: 1.6em;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: white;
+}
+
+#navpage > ul > li > button:active {
+    outline: none;
+    background-color: #a1afba;
+}
+
+#navpage > ul > li > input:focus {
+    outline: none;
+    background-color: #a1afba;
+}
+
+#navpage > ul > li > .currpage {
+    background-color: black;
+    color: #ccd3d9;
+}

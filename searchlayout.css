@@ -1,0 +1,161 @@
+#bodywrapper {
+    padding: 5em 10px 0px 10px;
+    display: block;
+    margin: auto;
+    max-width: 940px;
+    min-width: 640px;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+section {
+    display:block;
+    border:0.2em black solid;
+}
+
+/*Search Bar*/
+#navbar {
+    display: flex;
+}
+
+#navbar > ul {
+    display: flex;
+    list-style-type: none ;
+    margin-left: auto;
+}
+
+#navbar > ul > li {
+    padding-right: 5px;
+    margin-left: auto;
+}
+
+#navbar button {
+    font-size: 1.5em;
+    cursor: pointer;
+    border: none;
+}
+
+#searchbarleft {
+    height: 50%;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+#searchbarleft > li > a {
+    font-size: 1.7em;
+    padding-left: 1em;
+}
+
+#searchbtn {
+    height: 30px;
+}
+
+#searchlist li{
+    cursor: pointer;
+    padding: 5px;
+    background-color: aliceblue;
+    display: none;
+    border: 1px solid black;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+#searchlist {
+    box-sizing: border-box;
+    width: 200px;
+    z-index: 2;
+    position: absolute;
+    padding: 0;
+}
+
+#myInput {
+    box-sizing: border-box;
+    width: 200px;
+    min-height: 2.2em;
+}
+
+/*Select Game Layout*/
+#selectGameProfile {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gameProfile {
+    max-height: fit-content;
+    cursor: pointer;
+    box-sizing: border-box;
+    width: calc(25% - 10px);
+    margin: 5px;
+    position: relative;
+}
+
+.gameProfile > img {
+    height: 75%;
+    width: 100%;
+}
+
+.gameProfileText {
+    padding: 0 4px 1.2em 4px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gameProfileText > h1 {
+    margin-top: 10px;
+    font-size: 17px;
+    max-width: 55%;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.priceTag {
+    display: block;
+    margin: 17px 3px auto auto;
+}
+
+.date {
+    position: absolute;
+    bottom: 0;
+}
+
+.addToCartBtn {
+    z-index: 2;
+    font-size: 1em;
+    border: none;
+    right: 0.2%;
+    position: absolute;
+}
+
+/*navpage layout*/
+#navpage {
+    height: 50px;
+}
+
+#navpage > ul > li > input {
+    box-sizing: border-box;
+    line-height: 5px;
+    text-align: center;
+    width: 25px;
+}
+
+#navpage > ul{
+    width: calc(50% + 10px);
+    margin-left: auto;
+    display: flex;
+    list-style-type: none;
+    cursor: default;
+}
+
+#navpage > ul > li > button {
+    cursor: pointer;
+}
+
+#navpage li {
+    padding-right: 5px
+}
+
+/*footer-layout*/
+footer {
+    margin: -10px;
+}

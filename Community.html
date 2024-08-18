@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Community on Fishe Games</title>
+        <link href="communitylayout.css" rel="stylesheet">
+        <link href="communitydesign.css" rel="stylesheet">
+        <link rel="stylesheet" href="../header/nav.css">
+        <link rel="stylesheet" href="../footer/footer.css">
+        <link rel="icon" type="image/x-icon" href="photo/fish-logo-quan.png"> 
+    </head>
+    <body>
+        <header>
+            <!--Navigation Bar-->
+            <nav>
+                <div class="logo">
+                    <a href="../Terrence Project/login.html"><img src="photo/logo.jpg"></a>                   
+                </div>
+                <ul>
+                    <li><a href='../Terrence Project/slider.html'>Home</a></li>
+                    <li><a href='../Sofea Project/aboutUs.html'>About</a></li>
+                    <li><a href='../Liang Quan Project/Search.html'>Game</a></li>
+                    <li><a href='../Sofea Project/product.html'>Console</a></li>
+                    <li><a href='../Terrence Project/developer.html'>Developer</a></li>
+                    <li><a href='../Shan Wen Project/contact_us.html'>Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="bodywrapper">
+            <section id="createpost">
+                <div class="userinfo">
+                    <div class="pfp"><img src="photo/gigachadpfp.jpg" alt="profilepic"></div>
+                </div>
+                <div id="postcontent">
+                    <textarea placeholder="Speak Your Mind" id="inputpost"></textarea>
+                    <div id="posttools">
+                        <img src="photo/imageicon.svg" alt="imageicon">
+                        <img src="photo/gif.png" alt="gificon">
+                        <img src="photo/happy.png" alt="emojiicon">
+                        <input type="button" value="Post">
+                    </div>
+                </div>
+            </section>
+            <section class="post">
+                <div class="userinfo">
+                    <div class="pfp"><img src="photo/xinzoruopfp.jpg" alt="profilepic"></div>
+                    <div class="usernametitle">
+                        <h1>&#128563;&#10067;&#10067;&#10067;</h1>
+                        <h4>- 心臓弱眞君 <span class="online"></span></h4>
+                        <h6>5 minutes ago</h6>
+                    </div>
+                </div>
+                <div class="votes">
+                    <ul>
+                        <li><img src="photo/arrow-up-drop-circle-outline.svg" alt="upvote" onclick="upvote(1,0)"></li>
+                        <li class="count">0</li>
+                        <li><img src="photo/arrow-down-drop-circle-outline.svg" alt="downvote" onclick="upvote(-1,0)"></li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <img src="photo/pt1.jpg" class="slideshow" alt="content">
+                    <img src="photo/pt2.jpg" class="slideshow" alt="content">
+                    <img src="photo/pt3.jpg" class="slideshow" alt="content">
+                    <img src="photo/pt4.jpg" class="slideshow" alt="content">
+                    <img src="photo/pt5.jpg" class="slideshow" alt="content">
+                    <img src="photo/pt6.jpg" class="slideshow" alt="content">
+                    <button type="button" class="prevbutton" onclick="nextSlide(-1, 0); setPage(-1, 0)"><img class="prev" src="photo/leftarrow.svg" alt="chevron-left-icon"></button>
+                    <button type="button" class="nextbutton" onclick="nextSlide(1, 0); setPage(1, 0)" ><img class="next" src="photo/rightarrow.svg" alt="chevron-right-icon"></button>
+                    <div class="currPage"><span class="pageNo">1</span>/<span class="totalPage">6</span></div>
+                </div>
+                <div class="contentinfo">
+                    <ul>
+                        <li>Comments</li>
+                        <li>Share</li>
+                        <li>...</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="post">
+                <div class="userinfo">
+                    <div class="pfp"><img src="photo/kaydenpfp.jpg" alt="profilepic"></div>
+                    <div class="usernametitle">
+                        <h1>One of my Favourite Games of All Time!</h1>
+                        <h4>- catlover69 <span class="online"></span></h4>
+                        <h6>5 minutes ago</h6>
+                    </div>
+                </div>
+                <div class="votes">
+                    <ul>
+                        <li><img src="photo/arrow-up-drop-circle-outline.svg" alt="upvote" onclick="upvote(1,1)"></li>
+                        <li class="count">0</li>
+                        <li><img src="photo/arrow-down-drop-circle-outline.svg" alt="downvote" onclick="upvote(-1,1)"></li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <img src="photo/straygameplay.jpg" alt="content">
+                </div>
+                <div class="contentinfo">
+                    <ul>
+                        <li>Comments</li>
+                        <li>Share</li>
+                        <li>...</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="post">
+                <div class="userinfo">
+                    <div class="pfp"><img src="photo/saitamapfp.png" alt="profilepic"></div>
+                    <div class="usernametitle">
+                        <h1>Has anyone seen the Tatsumaki commercial?</h1>
+                        <h4>- capedbaldy <span class="offline"></span></h4>
+                        <h6>1 hour ago</h6>
+                    </div>
+                </div>
+                <div class="votes">
+                    <ul>
+                        <li><img src="photo/arrow-up-drop-circle-outline.svg" alt="upvote" onclick="upvote(1,2)"></li>
+                        <li class="count">0</li>
+                        <li><img src="photo/arrow-down-drop-circle-outline.svg" alt="downvote" onclick="upvote(-1,2)"></li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <p>
+                        OMG guys, you won't believe what I just saw! Tatsumaki, the queen of being cold and distant, 
+                        just appeared in a commercial and acted totally out of character! She was all cute and bubbly, 
+                        and I couldn't believe my eyes! I mean, I know she's a powerful hero and all, but seeing her like this was a shocker! 
+                        I wonder if this means she's secretly a softie underneath that tough exterior? 
+                        Either way, I never thought I'd see the day when Tatsumaki was acting all adorable in a commercial. Life is full of surprises, huh? 
+                    </p>
+                    <ul class="hashtags">
+                        <li>#Tatsumaki</li>
+                        <li>#OnePunchMan</li>
+                        <li>#Shocked</li>
+                        <li>#CuteCommercial</li>
+                    </ul>
+                </div>
+                <div class="contentinfo">
+                    <ul>
+                        <li>Comments</li>
+                        <li>Share</li>
+                        <li>...</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="post">
+                <div class="userinfo">
+                    <div class="pfp"><img src="photo/nagatoropfp.jpg" alt="profilepic"></div>
+                    <div class="usernametitle">
+                        <h1>Im addicted, help.</h1>
+                        <h4>- discordmod <span class="away"></span></h4>
+                        <h6>2 hours ago</h6>
+                    </div>
+                </div>
+                <div class="votes">
+                    <ul>
+                        <li><img src="photo/arrow-up-drop-circle-outline.svg" alt="upvote" onclick="upvote(1,3)"></li>
+                        <li class="count">0</li>
+                        <li><img src="photo/arrow-down-drop-circle-outline.svg" alt="downvote" onclick="upvote(-1,3)"></li>
+                    </ul>
+                </div>
+                <div class="content" >
+                    <video controls muted>
+                        <source src="video/Genshin Impact - Official Version 3.0 Gameplay.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="contentinfo">
+                    <ul>
+                        <li>Comments</li>
+                        <li>Share</li>
+                        <li>...</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="post">
+                <div class="userinfo">
+                    <div class="pfp"><img src="photo/sindeleditspfp.jpg" alt="profilepic"></div>
+                    <div class="usernametitle">
+                        <h1>Joel Miller || The Last Of Us Edit</h1>
+                        <h4>- sindeledits <span class="away"></span></h4>
+                        <h6>1 day ago</h6>
+                    </div>
+                </div>
+                <div class="votes">
+                    <ul>
+                        <li><img src="photo/arrow-up-drop-circle-outline.svg" alt="upvote" onclick="upvote(1,4)"></li>
+                        <li class="count">0</li>
+                        <li><img src="photo/arrow-down-drop-circle-outline.svg" alt="downvote" onclick="upvote(-1,4)"></li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <video controls muted>
+                        <source src="video/tlou4shorts.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="contentinfo">
+                    <ul>
+                        <li>Comments</li>
+                        <li>Share</li>
+                        <li>...</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="post">
+                <div class="userinfo">
+                    <div class="pfp"><img src="photo/saraspacesuit.gif" alt="profilepic"></div>
+                    <div class="usernametitle">
+                        <h1>Looking for Trade</h1>
+                        <h4>- walleR <span class="online"></span></h4>
+                        <h6>1 day ago</h6>
+                    </div>
+                </div>
+                <div class="votes">
+                    <ul>
+                        <li><img src="photo/arrow-up-drop-circle-outline.svg" alt="upvote" onclick="upvote(1,5)"></li>
+                        <li class="count">0</li>
+                        <li><img src="photo/arrow-down-drop-circle-outline.svg" alt="downvote" onclick="upvote(-1,5)"></li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <div class="tradeoffer">
+                        <img src="photo/dragonlore.png" alt="tradeitem" class="tradeitem">
+                        <img src="photo/arrow-right-solid.svg" alt="arrow">
+                        <img src="photo/karambit.png" alt="tradeitem" class="tradeitem">
+                    </div>
+                    <div class="contentinfo">
+                        <ul>
+                            <li>Accept</li>
+                            <li>|</li>
+                            <li>Offer</li>
+                            <li>|</li>
+                            <li>Ignore</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contentinfo">
+                    <ul>
+                        <li>Comments</li>
+                        <li>Share</li>
+                        <li>...</li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+        <!--Footer-->
+        <footer>
+            <div class="footer-content">
+
+                <div class="footer-brand">
+                    <img src="photo/logo.jpg" alt="" class="footer-logo">
+                    <p class="slogan">Experience the ultimate gaming adventure</p>
+                    <div class="social-link">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <h4 class="link-heading">Fishe</h4>
+                        <li class="link-item"><a href="../Sofea Project/aboutUs.html">About Us</a></li>
+                        <li class="link-item"><a href="../Shan Wen Project/contact_us.html">Contact Us</a></li>
+                        <li class="link-item"><a href="../Terrence Project/developer.html">Game Developer</a></li>
+                        <li class="link-item"><a href="../Liang Quan Project/Community.html">Community</a></li>
+                        <li class="link-item"><a href="#">FAQ</a></li>
+                    </ul>
+                    <ul>
+                        <h4 class="link-heading">Browse</h4>
+                        <li class="link-item"><a href="../Sofea Project/aboutUs.html">About Us</a></li>
+                        <li class="link-item"><a href="../Shan Wen Project/contact_us.html">Contact Us</a></li>
+                        <li class="link-item"><a href="../Terrence Project/developer.html">Game Developer</a></li>
+                        <li class="link-item"><a href="../Liang Quan Project/Community.html">Community</a></li>
+                        <li class="link-item"><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="copyright">
+                    <p>&copy; copyright 2023 Fishe</p>
+                </div>
+
+                <div class="footer-wrapper">
+                    <a href="#">Privacy policy</a>
+                    <a href="#">Terms and conditions</a>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script text="text/javascript" src="community.js"></script>
+    <script src="../header/nav.js"></script>
+</html>

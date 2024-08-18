@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Search on Fishe Games</title>
+        <link href= "searchlayout.css" rel="stylesheet">
+        <link href= "searchdesign.css" rel="stylesheet">
+        <link rel="stylesheet" href="../header/nav.css">
+        <link rel="stylesheet" href="../footer/footer.css"> 
+        <link rel="icon" type="image/x-icon" href="photo/fish-logo-quan.png">
+    </head>
+    <body>
+        <header>
+            <!--Navigation Bar-->
+            <nav>
+                <div class="logo">
+                    <a href="../Terrence Project/login.html"><img src="photo/logo.jpg"></a>                   
+                </div>
+                <ul>
+                    <li><a href='../Terrence Project/slider.html'>Home</a></li>
+                    <li><a href='../Sofea Project/aboutUs.html'>About</a></li>
+                    <li><a href='../Liang Quan Project/Search.html'>Game</a></li>
+                    <li><a href='../Sofea Project/product.html'>Console</a></li>
+                    <li><a href='../Terrence Project/developer.html'>Developer</a></li>
+                    <li><a href='../Shan Wen Project/contact_us.html'>Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="bodywrapper">
+            <section id="navbar">
+                <div>
+                    <ul id="searchbarleft">
+                        <li><a href="#">Your Store</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="Community.html">Community</a></li>
+                    </ul>
+                </div>
+                <ul>
+                    <li id="searchbar">
+                        <input type="text" id="myInput" placeholder="Search.." onkeyup="search()" onblur="blurlist()" onfocus="this.value=''">
+                        <ul id="searchlist">
+                            <li onmousedown="location.href='Subnautica.html'"><a>Subnautica</a></li>
+                            <li onmousedown="location.href='../Sofea Project/uncharted.html'"><a>Uncharted 4: A Thiefs End</a></li>
+                            <li onmousedown="location.href='#'"><a>Minecraft</a></li>
+                            <li onmousedown="location.href='#'"><a>Counter-Strike: Global Offensive</a></li>
+                            <li onmousedown="location.href='#'"><a>Vampire Survivors</a></li>
+                            <li onmousedown="location.href='#'"><a>Dota 2</a></li>
+                            <li onmousedown="location.href='#'"><a>Terraria</a></li>
+                            <li onmousedown="location.href='#'"><a>Valorant</a></li>
+                            <li onmousedown="location.href='#'"><a>Project Zomboid</a></li>
+                            <li onmousedown="location.href='#'"><a>Clash Royale</a></li>
+                            <li onmousedown="location.href='#'"><a>The Last of Us</a></li>
+                            <li onmousedown="location.href='#'"><a>Subnautica: Below Zero</a></li>
+                            <li onmousedown="location.href='#'"><a>Borderlands 2</a></li>
+                            <li onmousedown="location.href='#'"><a>Grand Theft Auto V</a></li>
+                            <li onmousedown="location.href='#'"><a>Overwatch 2</a></li>
+                            <li onmousedown="location.href='#'"><a>Among Us</a></li>
+                        </ul>
+                    </li>
+                    <li><input type="image" src="photo/icons8-search.svg" id="searchbtn"></li>
+                </ul>
+            </section>
+            <section id="selectGameProfile">
+                <section class="gameProfile">
+                    <img src="photo/subnauticaprofile.webp"  alt="subnauticalogo" onclick="location.href='Subnautica.html'">
+                    <input type ="button"  class="addToCartBtn" value="+" onclick="addToCart(0,1)">
+                    <div class="gameProfileText" onclick="location.href='Subnautica.html'">
+                        <h1>Subnautica</h1>
+                        <span class="priceTag">RM51.00</span>
+                        <span class="date">16th Dec 2014</span>
+                    </div>
+                </section>
+                <section class="gameProfile">
+                    <img src="photo/uncharted4profile.jpg" alt="uncharted4logo" onclick="location.href='../Sofea Project/uncharted.html'">
+                    <input type ="button"  class="addToCartBtn" value="+" onclick="addToCart(1,1)">
+                    <div class="gameProfileText">
+                        <h1>Uncharted 4: A Thiefs End</h1>
+                        <span class="priceTag">RM169.99</span>
+                        <span class="date">10th May 2016</span>
+                    </div>
+                </section>
+                <section class="gameProfile">
+                    <img src="photo/minecraftprofile.png">
+                    <input type ="button"  class="addToCartBtn" value="+" onclick="addToCart(2,1)">
+                    <div class="gameProfileText">
+                        <h1>Minecraft</h1>
+                        <span class="priceTag">RM52.00</span>
+                        <span class="date">18th Nov 2011</span>
+                    </div>
+                </section>
+                <section class="gameProfile">
+                    <img src="photo/csgoprofile.jpg">
+                    <input type ="button"  class="addToCartBtn" value="+" onclick="addToCart(3,1)">
+                    <div class="gameProfileText">
+                        <h1>Counter-Strike: Global Offensive</h1>
+                        <span class="priceTag">FREE</span>
+                        <span class="date">21 Aug 2012</span>
+                    </div>
+                </section>
+                <section class="gameProfile">
+                    <img src="photo/vampiresurvivorsprofile.jpg">
+                    <input type ="button"  class="addToCartBtn" value="+" onclick="addToCart(4,1)">
+                    <div class="gameProfileText">
+                        <h1>Vampire Survivors</h1>
+                        <span class="priceTag">RM14.99</span>
+                        <span class="date">2021 March 31st</span>
+                    </div>
+                </section>
+                <section class="gameProfile">
+                    <img src="photo/dota2profile.jpg">
+                    <input type ="button"  class="addToCartBtn" value="+" onclick="addToCart(5,1)">
+                    <div class="gameProfileText">
+                        <h1>Dota 2</h1>
+                        <span class="priceTag">FREE</span>
+                        <span class="date">2013 July 9th</span>
+                    </div>
+                </section>
+                <section class="gameProfile">
+                    <img src="photo/terrariaprofile.jpg">
+                    <input type ="button"  class="addToCartBtn" value="+" onclick="addToCart(6,1)">
+                    <div class="gameProfileText">
+                        <h1>Terraria</h1>
+                        <span class="priceTag">RM23.00</span>
+                        <span class="date">2011 May 16th</span>
+                    </div>
+                </section>
+                <section class="gameProfile">
+                    <img src="photo/valorantprofile.jpg">
+                    <input type ="button"  class="addToCartBtn" value="+" onclick="addToCart(7,1)">
+                    <div class="gameProfileText">
+                        <h1>Valorant</h1>
+                        <span class="priceTag">FREE</span>
+                        <span class="date">2020 June 2nd</span>
+                    </div>
+                </section>
+                <section class="gameProfile">
+                    <img src="photo/projectzomboidprofile.jpg">
+                    <input type ="button"  class="addToCartBtn" value="+" onclick="addToCart(8,1)">
+                    <div class="gameProfileText">
+                        <h1>Project Zomboid</h1>
+                        <span class="priceTag">RM49.00</span>
+                        <span class="date">2013 November 8th</span>
+                    </div>
+                </section>
+                <section class="gameProfile">
+                    <img src="photo/clashroyaleprofile.png">
+                    <input type ="button"  class="addToCartBtn" value="+" onclick="addToCart(9,1)">
+                    <div class="gameProfileText">
+                        <h1>Clash Royale</h1>
+                        <span class="priceTag">FREE</span>
+                        <span class="date">2016 March 2nd</span>
+                    </div>
+                </section>
+                <section class="gameProfile">
+                    <img src="photo/TLoSprofile.jpg">
+                    <input type ="button"  class="addToCartBtn" value="+" onclick="addToCart(10,1)">
+                    <div class="gameProfileText">
+                        <h1>The Last of Us</h1>
+                        <span class="priceTag">RM249.99</span>
+                        <span class="date">2013 June 14th</span>
+                    </div>
+                </section>
+                <section class="gameProfile">
+                    <img src="photo/bl2profile.jpg">
+                    <input type ="button"  class="addToCartBtn" value="+" onclick="addToCart(11,1)">
+                    <div class="gameProfileText">
+                        <h1>Borderlands 2</h1>
+                        <span class="priceTag">RM38.00</span>
+                        <span class="date">2012 September 20th</span>
+                    </div>
+                </section>
+                <section class="gameProfile">
+                    <img src="photo/gta5profile.jpg">
+                    <input type ="button"  class="addToCartBtn" value="+" onclick="addToCart(12,1)">
+                    <div class="gameProfileText">
+                        <h1>Grand Theft Auto V</h1>
+                        <span class="priceTag">RM111.00</span>
+                        <span class="date">2015 April 14th</span>
+                    </div>
+                </section>
+                <section class="gameProfile">
+                    <img src="photo/ow2profile.jpg">
+                    <input type ="button"  class="addToCartBtn" value="+" onclick="addToCart(13,1)">
+                    <div class="gameProfileText">
+                        <h1>Overwatch 2</h1>
+                        <span class="priceTag">FREE</span>
+                        <span class="date">2022 October 4th</span>
+                    </div>
+                </section>
+                <section class="gameProfile">
+                    <img src="photo/amongusprofile.jpg">
+                    <input type ="button"  class="addToCartBtn" value="+" onclick="addToCart(14,1)">
+                    <div class="gameProfileText">
+                        <h1>Among Us</h1>
+                        <span class="priceTag">RM13.99</span>
+                        <span class="date">2018 November 17th</span>
+                    </div>
+                </section>
+                <section class="gameProfile">
+                    <img src="photo/subnauticabzprofile.jpg">
+                    <input type ="button"  class="addToCartBtn" value="+" onclick="addToCart(15,1)">
+                    <div class="gameProfileText">
+                        <h1>Subnautica: Below Zero</h1>
+                        <span class="priceTag">RM51.00</span>
+                        <span class="date">2019 January 30th</span>
+                    </div>
+                </section>
+            </section>
+            <section id="navpage">
+                <ul>
+                    <li><input type="button" onclick="typeInt()" placeholder="..." onblur="blurType()" onfocus="this.value=''"></li>
+                    <li><button type="button" class="currpage">1</button></li>
+                    <li><button type="button">2</button></li>
+                    <li><button type="button">&#8594;</button></li>
+                    <li><button type="button">&#8677;</button></li>
+                </ul>
+            </section>
+        </section>
+        <footer>
+            <div class="footer-content">
+
+                <div class="footer-brand">
+                    <img src="photo/logo.jpg" alt="" class="footer-logo">
+                    <p class="slogan">Experience the ultimate gaming adventure</p>
+                    <div class="social-link">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <h4 class="link-heading">Fishe</h4>
+                        <li class="link-item"><a href="../Sofea Project/aboutUs.html">About Us</a></li>
+                        <li class="link-item"><a href="../Shan Wen Project/contact_us.html">Contact Us</a></li>
+                        <li class="link-item"><a href="../Terrence Project/developer.html">Game Developer</a></li>
+                        <li class="link-item"><a href="../Liang Quan Project/Community.html">Community</a></li>
+                        <li class="link-item"><a href="#">FAQ</a></li>
+                    </ul>
+                    <ul>
+                        <h4 class="link-heading">Browse</h4>
+                        <li class="link-item"><a href="../Sofea Project/aboutUs.html">About Us</a></li>
+                        <li class="link-item"><a href="../Shan Wen Project/contact_us.html">Contact Us</a></li>
+                        <li class="link-item"><a href="../Terrence Project/developer.html">Game Developer</a></li>
+                        <li class="link-item"><a href="../Liang Quan Project/Community.html">Community</a></li>
+                        <li class="link-item"><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="copyright">
+                    <p>&copy; copyright 2023 Fishe</p>
+                </div>
+
+                <div class="footer-wrapper">
+                    <a href="#">Privacy policy</a>
+                    <a href="#">Terms and conditions</a>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script text="text/javascript" src="search.js"></script>
+    <script text="text/javascript" src="Shan Wen Project/add_to_cart.js"></script>
+    <script text="text/javascript" src="../header/nav.js"></script>
+</html>
